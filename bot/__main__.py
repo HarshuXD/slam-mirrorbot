@@ -42,10 +42,6 @@ def stats(update, context):
             f'<b>├CPU:</b> <code>{cpuUsage}%</code>\n' \
             f'<b>├RAM:</b> <code>{memory}%</code>\n' \
             f'<b>├DISK:</b> <code>{disk}%</code>\n' \
-            f'<b>├SWAP:</b> {swap_t} | <b>Used:</b> {swap_p}%\n'\
-            f'<b>├Memory Total:</b> {mem_t}\n'\
-            f'<b>├Memory Free:</b> {mem_a}\n'\
-            f'<b>├Memory Used:</b> {mem_u}\n' \
             f'<b>│</b>\n' \
             f'<b>╰──《 ☣️ @HHXDDBOT ☣️ 》</b>'
     sendMessage(stats, context.bot, update)
