@@ -42,7 +42,7 @@ def stats(update, context):
             f'<b>├CPU:</b> <code>{cpuUsage}%</code> ' \
             f'<b>├RAM:</b> <code>{memory}%</code> ' \
             f'<b>├DISK:</b> <code>{disk}%</code>'
-            f'<b>╰──《 ☣️ @HHXDDBOT ☣️ 》</b>'
+            f'<b>╰──《 ☣️ @HHXDDBOT ☣️ 》</b> ' \
     sendMessage(stats, context.bot, update)
 
 
