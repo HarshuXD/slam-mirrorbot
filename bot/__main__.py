@@ -47,6 +47,7 @@ def start(update, context):
     buttons = button_build.ButtonMaker()
     buttons.buildbutton("⚜️Starter Mirror And Leech", "https://t.me/StarterLeech")
     buttons.buildbutton("Part Of", "https://t.me/StarterNetworkz")
+    buttons.buildbutton("Maintained By 🗣", "https://t.me/Harshu_xD")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
