@@ -31,15 +31,19 @@ def stats(update, context):
     cpuUsage = psutil.cpu_percent(interval=0.5)
     memory = psutil.virtual_memory().percent
     disk = psutil.disk_usage('/').percent
-    stats = f'<b>Bot Uptime:</b> <code>{currentTime}</code>\n' \
-            f'<b>Total Disk Space:</b> <code>{total}</code>\n' \
-            f'<b>Used:</b> <code>{used}</code> ' \
-            f'<b>Free:</b> <code>{free}</code>\n\n' \
-            f'<b>Upload:</b> <code>{sent}</code>\n' \
-            f'<b>Download:</b> <code>{recv}</code>\n\n' \
-            f'<b>CPU:</b> <code>{cpuUsage}%</code> ' \
-            f'<b>RAM:</b> <code>{memory}%</code> ' \
-            f'<b>DISK:</b> <code>{disk}%</code>'
+    stats = f'<b>╭──《🌐 Bot Stats 🌐》</b> ' \
+            f'<b>│</b> ' \
+            f'<b>├Bot Uptime:</b> <code>{currentTime}</code>\n' \
+            f'<b>├Total Disk Space:</b> <code>{total}</code>\n' \
+            f'<b>├Used:</b> <code>{used}</code> ' \
+            f'<b>├Free:</b> <code>{free}</code>\n\n' \
+            f'<b>├Upload:</b> <code>{sent}</code>\n' \
+            f'<b>├Download:</b> <code>{recv}</code>\n\n' \
+            f'<b>├CPU:</b> <code>{cpuUsage}%</code> ' \
+            f'<b>├RAM:</b> <code>{memory}%</code> ' \
+            f'<b>├DISK:</b> <code>{disk}%</code>'
+            f'<b>|</b> ' \
+            f'<b>╰──《 ☣️ @HHXDDBOT ☣️ 》
     sendMessage(stats, context.bot, update)
 
 
