@@ -42,8 +42,6 @@ def stats(update, context):
             f'<b>├CPU:</b> <code>{cpuUsage}%</code>\n' \
             f'<b>├RAM:</b> <code>{memory}%</code>\n' \
             f'<b>├DISK:</b> <code>{disk}%</code>\n' \
-            f'<b>├Physical Cores:</b> {p_core}\n'\
-            f'<b>├Total Cores:</b> {t_core}\n'\
             f'<b>├SWAP:</b> {swap_t} | <b>Used:</b> {swap_p}%\n'\
             f'<b>├Memory Total:</b> {mem_t}\n'\
             f'<b>├Memory Free:</b> {mem_a}\n'\
